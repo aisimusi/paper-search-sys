@@ -1,0 +1,44 @@
+{
+  "papers": [
+    {
+      "paper_id": "fictional-skill-fixture",
+      "source": "fixture",
+      "title": "Fictional adaptive selection experiment",
+      "authors": [
+        "Fixture Author"
+      ],
+      "abstract": "Fictional sample for skill testing only.",
+      "published": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "url": "https://example.invalid/fixture",
+      "pdf_url": "",
+      "full_text": "The controlled experiment compares the adaptive selection method with a fixed compute baseline."
+    }
+  ],
+  "analyses": [
+    {
+      "paper_id": "fictional-skill-fixture",
+      "reading_level": "paper_excerpt",
+      "discovery_summary": "Fictional sample for skill testing only.",
+      "claims": [
+        {
+          "kind": "result",
+          "text": "This method reaches 100 FPS on Jetson Orin.",
+          "anchor_quote": "The controlled experiment compares the adaptive selection method with a fixed compute baseline."
+        }
+      ],
+      "scores": {
+        "novelty": null,
+        "method": null,
+        "experiments": 3,
+        "writing": null,
+        "relevance": 4
+      },
+      "fit_to_lab": "待确认",
+      "resource_notes": "未提供设备条件",
+      "missing_evidence": [
+        "原文未给出 Orin 硬件或帧率"
+      ]
+    }
+  ]
+}

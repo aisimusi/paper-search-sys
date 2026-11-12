@@ -1,0 +1,25 @@
+{
+  "goal": "基于所提供的虚构论文，设计可证伪的最小对照实验；缺少资源时询问用户。",
+  "papers": [
+    {
+      "paper_id": "fictional-skill-fixture",
+      "source": "fixture",
+      "title": "Fictional adaptive selection experiment",
+      "authors": [
+        "Fixture Author"
+      ],
+      "abstract": "Fictional sample for skill testing only.",
+      "published": "2026-10-13T00:00:00Z",
+      "updated": "2026-10-13T00:00:00Z",
+      "url": "https://example.invalid/fixture",
+      "pdf_url": "",
+      "full_text": "The controlled experiment compares the adaptive selection method with a fixed compute baseline."
+    }
+  ],
+  "facts": {},
+  "deployment": false,
+  "limits": {
+    "max_steps": 12,
+    "token_budget": 250000
+  }
+}

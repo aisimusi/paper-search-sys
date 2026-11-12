@@ -1,0 +1,56 @@
+{
+  "skill": "experiment-design",
+  "version": "0.1.0",
+  "input_schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "goal"
+    ],
+    "properties": {
+      "goal": {
+        "type": "string",
+        "minLength": 1
+      },
+      "papers": {
+        "type": "array",
+        "items": {
+          "type": "object"
+        },
+        "maxItems": 10
+      },
+      "facts": {
+        "type": "object"
+      },
+      "limits": {
+        "type": "object"
+      },
+      "deployment": {
+        "type": "boolean"
+      }
+    }
+  },
+  "paper_contract": "papers 条目使用 scholar_daily.models.Paper；必填 paper_id/source/title/authors/abstract/published/updated/url/pdf_url。full_text 为实际提供的正文片段。",
+  "output": {
+    "common": {
+      "skill": "名称",
+      "version": "语义化版本",
+      "input_hash": "输入 SHA-256",
+      "run_dir": "独立运行目录",
+      "result_path": "完整结果 JSON 路径"
+    },
+    "task_dir": "编排器任务目录，与 run_dir 同义",
+    "state_path": "持久化状态 JSON 路径",
+    "report_path": "带证据与审查状态的 Markdown 报告",
+    "pending": "会话任务或用户事实请求",
+    "status": "complete | partial | waiting | waiting_input"
+  },
+  "exit_codes": {
+    "0": "准备/状态查询成功，或运行完整通过",
+    "1": "输入/配置/版本错误",
+    "2": "等待响应或只能部分交付"
+  },
+  "failure_policy": "不伪造来源、设备条件或成功结果；会话响应错误按验证反馈修正；恢复固定输入与版本，使用账本复用完成请求。",
+  "tests": "tests/test_skills.py，虚构材料和受控模型响应仅验证契约、路由与恢复；不代表真实语义准确率。"
+}

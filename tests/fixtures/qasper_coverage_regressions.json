@@ -1,0 +1,371 @@
+[
+  {
+    "question_id": "bc67b91dd73acded2d52fd4fee732b7a9722ea8b",
+    "answer": "Recursive neighborhood aggregation that updates each vertex by combining its current representation with messages aggregated from its neighbors.",
+    "review": {
+      "question_id": "q3",
+      "all_claims_covered": "yes",
+      "claims": [
+        {
+          "answer_span": "Recursive neighborhood aggregation",
+          "claim": "消息传递框架的核心是递归邻域聚合。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s0:p1",
+              "quote": "The MP framework is based on the core idea of recursive neighborhood aggregation."
+            }
+          ],
+          "reason": "与段落中的核心定义一致。"
+        },
+        {
+          "answer_span": "updates each vertex",
+          "claim": "该框架更新每个顶点的表示。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s0:p1",
+              "quote": "at every iteration, the representation of each vertex is updated based on messages received from its neighbors."
+            }
+          ],
+          "reason": "结合答案后文，更新对象是顶点表示，段落明确支持。"
+        },
+        {
+          "answer_span": "combining its current representation with messages aggregated from its neighbors",
+          "claim": "更新通过将顶点当前表示与来自邻居的聚合消息结合来完成。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s1:p0",
+              "quote": "MP consists in an aggregation phase followed by a combination phase"
+            },
+            {
+              "paragraph_id": "s0:p1",
+              "quote": "messages received from its neighbors"
+            },
+            {
+              "paragraph_id": "s1:p2",
+              "quote": "combining its current feature vector $\\mathbf {h}^{t}_v$ with the message vector $\\mathbf {m}_v^{t+1}$"
+            }
+          ],
+          "reason": "各段共同明确了邻居消息的来源、聚合阶段及与当前表示结合的更新方式。"
+        }
+      ],
+      "missing_information": "无。"
+    },
+    "cited": [
+      {
+        "id": "s0:p1",
+        "section": "Introduction",
+        "text": "The MP framework is based on the core idea of recursive neighborhood aggregation. That is, at every iteration, the representation of each vertex is updated based on messages received from its neighbors. All spectral GNNs can be described in terms of the MP framework.",
+        "score": 5.676246960069703
+      },
+      {
+        "id": "s1:p0",
+        "section": "Message Passing Neural Networks",
+        "text": "BIBREF13 proposed a MP framework under which many of the recently introduced GNNs can be reformulated. MP consists in an aggregation phase followed by a combination phase BIBREF14. More precisely, let $G(V,E)$ be a graph, and let us consider $v \\in V$. At time $t+1$, a message vector $\\mathbf {m}_v^{t+1}$ is computed from the representations of the neighbors $\\mathcal {N}(v)$ of $v$:",
+        "score": 5.3200224186313
+      },
+      {
+        "id": "s1:p2",
+        "section": "Message Passing Neural Networks",
+        "text": "The new representation $\\mathbf {h}^{t+1}_v$ of $v$ is then computed by combining its current feature vector $\\mathbf {h}^{t}_v$ with the message vector $\\mathbf {m}_v^{t+1}$:",
+        "score": 3.9307102233045472
+      }
+    ]
+  },
+  {
+    "question_id": "2a564b092916f2fabbfe893cf13de169945ef2e1",
+    "answer": "Turkish: 20,244 reviews from a popular website, averaging 39 words; ratings 0.5–5 in 0.5 increments; negative ≤2.5, positive ≥4; 7,020 reviews per class randomly selected. English: web-collected corpus with 5,331 positive and 5,331 negative reviews.",
+    "review": {
+      "question_id": "q3",
+      "all_claims_covered": "yes",
+      "claims": [
+        {
+          "answer_span": "Turkish: 20,244 reviews",
+          "claim": "土耳其语电影评论语料包含 20,244 条评论。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "For Turkish, as the first dataset, we utilised the movie reviews"
+            },
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "The number of reviews in this movie corpus is 20,244"
+            }
+          ],
+          "reason": "语言、领域及评论总数均一致。"
+        },
+        {
+          "answer_span": "from a popular website",
+          "claim": "土耳其语电影评论来自一个热门网站。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "For Turkish, as the first dataset, we utilised the movie reviews which are collected from a popular website."
+            }
+          ],
+          "reason": "来源描述与原文一致。"
+        },
+        {
+          "answer_span": "averaging 39 words",
+          "claim": "土耳其语电影评论平均每条为 39 个词。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "the average number of words in reviews is 39"
+            }
+          ],
+          "reason": "均值、数值及单位均一致。"
+        },
+        {
+          "answer_span": "ratings 0.5–5",
+          "claim": "土耳其语电影评论的评分范围为 0.5 至 5。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "These polarity scores are between the values 0.5 and 5"
+            }
+          ],
+          "reason": "评分上下限一致。"
+        },
+        {
+          "answer_span": "in 0.5 increments",
+          "claim": "土耳其语电影评论的评分间隔为 0.5。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "at intervals of 0.5"
+            }
+          ],
+          "reason": "评分间隔有直接支持。"
+        },
+        {
+          "answer_span": "negative ≤2.5",
+          "claim": "土耳其语电影评论中评分小于或等于 2.5 的评论被视为负面。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "We consider a review to be negative it the score is equal to or lower than 2.5."
+            }
+          ],
+          "reason": "阈值及包含等号的边界条件均一致。"
+        },
+        {
+          "answer_span": "positive ≥4",
+          "claim": "土耳其语电影评论中评分大于或等于 4 的评论被视为正面。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "if it is equal to or higher than 4, it is assumed to be positive"
+            }
+          ],
+          "reason": "阈值及包含等号的边界条件均一致。"
+        },
+        {
+          "answer_span": "7,020 reviews per class randomly selected",
+          "claim": "从土耳其语电影评论中随机选取正面和负面评论各 7,020 条。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p1",
+              "quote": "We have randomly selected 7,020 negative and 7,020 positive reviews and processed only them."
+            }
+          ],
+          "reason": "随机选择方式、两个类别及每类数量均有直接支持。"
+        },
+        {
+          "answer_span": "English: web-collected corpus",
+          "claim": "英语电影语料从网络收集。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p3",
+              "quote": "We also utilised two other datasets in English to test the cross-linguality of our approaches. One of them is a movie corpus collected from the web."
+            }
+          ],
+          "reason": "语言、电影领域及网络来源均有直接支持。"
+        },
+        {
+          "answer_span": "5,331 positive",
+          "claim": "英语电影语料包含 5,331 条正面评论。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p3",
+              "quote": "There are 5,331 positive reviews and 5,331 negative reviews in this corpus."
+            }
+          ],
+          "reason": "数量和类别一致，this corpus 指前句的英语电影语料。"
+        },
+        {
+          "answer_span": "5,331 negative reviews",
+          "claim": "英语电影语料包含 5,331 条负面评论。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s8:p3",
+              "quote": "There are 5,331 positive reviews and 5,331 negative reviews in this corpus."
+            }
+          ],
+          "reason": "数量和类别一致，this corpus 指前句的英语电影语料。"
+        }
+      ],
+      "missing_information": ""
+    },
+    "cited": [
+      {
+        "id": "s8:p3",
+        "section": "Datasets",
+        "text": "We also utilised two other datasets in English to test the cross-linguality of our approaches. One of them is a movie corpus collected from the web. There are 5,331 positive reviews and 5,331 negative reviews in this corpus. The other is a Twitter dataset, which has nearly 1.6 million tweets annotated through a distant supervised method BIBREF14. These tweets have positive, neutral, and negative labels. We have selected 7,020 positive tweets and 7,020 negative tweets randomly to generate a balanced dataset.",
+        "score": 4.969145037519304
+      },
+      {
+        "id": "s8:p1",
+        "section": "Datasets",
+        "text": "For Turkish, as the first dataset, we utilised the movie reviews which are collected from a popular website. The number of reviews in this movie corpus is 20,244 and the average number of words in reviews is 39. Each of these reviews has a star-rating score which is indicative of sentiment. These polarity scores are between the values 0.5 and 5, at intervals of 0.5. We consider a review to be negative it the score is equal to or lower than 2.5. On the other hand, if it is equal to or higher than 4, it is assumed to be positive. We have randomly selected 7,020 negative and 7,020 positive reviews and processed only them.",
+        "score": 4.507183356940519
+      }
+    ]
+  },
+  {
+    "question_id": "a1dac888f63c9efaf159d9bdfde7c938636f07b1",
+    "answer": "Flickr tags, structured environmental data including CORINE and SoilGrids, Natura 2000, ScenicOrNot",
+    "review": {
+      "question_id": "q4",
+      "all_claims_covered": "yes",
+      "claims": [
+        {
+          "answer_span": "Flickr tags",
+          "claim": "论文使用 Flickr 标签数据。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s11:p0",
+              "quote": "learn geographic location embeddings using Flickr tags, numerical environmental features, and categorical information."
+            }
+          ],
+          "reason": "段落明确说明模型使用 Flickr 标签学习地理位置嵌入。"
+        },
+        {
+          "answer_span": "structured environmental data",
+          "claim": "论文使用结构化环境数据。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s6:p0",
+              "quote": "In this work, we have restricted ourselves to the same datasets as BIBREF7 . These include nine (real-valued) numerical features"
+            },
+            {
+              "paragraph_id": "s11:p0",
+              "quote": "using Flickr tags, numerical environmental features, and categorical information."
+            }
+          ],
+          "reason": "段落明确说明研究使用数值环境特征和类别信息，支持该数据类型描述。"
+        },
+        {
+          "answer_span": "CORINE",
+          "claim": "论文使用的结构化环境数据包括 CORINE 土地覆盖类别。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s6:p0",
+              "quote": "180 categorical features were used, which are CORINE land cover classes at level 1 (5 classes), level 2 (15 classes) and level 3 (44 classes)"
+            }
+          ],
+          "reason": "段落明确列出实际使用的 CORINE 土地覆盖类别。"
+        },
+        {
+          "answer_span": "SoilGrids",
+          "claim": "论文使用的结构化环境数据包括 SoilGrids 土壤类型。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s6:p0",
+              "quote": "and 116 soil types (SoilGrids)."
+            }
+          ],
+          "reason": "该引文属于段落所列的已使用类别特征，明确标注土壤类型来自 SoilGrids。"
+        },
+        {
+          "answer_span": "Natura 2000",
+          "claim": "论文使用 Natura 2000 数据集。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s7:p1",
+              "quote": "using the European network of nature protected sites Natura 2000 dataset as ground truth."
+            }
+          ],
+          "reason": "段落明确将 Natura 2000 用作物种分布预测任务的真值数据。"
+        },
+        {
+          "answer_span": "ScenicOrNot",
+          "claim": "论文使用 ScenicOrNot 数据集。",
+          "verdict": "supported",
+          "conditions_supported": "yes",
+          "citations": [
+            {
+              "paragraph_id": "s7:p6",
+              "quote": "using the crowdsourced dataset from the ScenicOrNot website as ground truth."
+            }
+          ],
+          "reason": "段落明确将 ScenicOrNot 用作景观美感预测任务的真值数据。"
+        }
+      ],
+      "missing_information": "无；答案列出的数据来源均有支持，且未声称它们具有相同的实验用途。"
+    },
+    "cited": [
+      {
+        "id": "s7:p1",
+        "section": "Evaluation Tasks",
+        "text": "Predicting the distribution of 100 species across Europe, using the European network of nature protected sites Natura 2000 dataset as ground truth. For each of these species, a binary classification problem is considered. The set of locations INLINEFORM0 is defined as the 26,425 distinct sites occurring in the dataset.",
+        "score": 5.924334037460127
+      },
+      {
+        "id": "s7:p6",
+        "section": "Evaluation Tasks",
+        "text": "Predicting people's subjective opinions of landscape beauty in Britain, using the crowdsourced dataset from the ScenicOrNot website as ground truth. The set INLINEFORM0 is chosen as the set of locations of 191 605 rated locations from the ScenicOrNot dataset for which at least one georeferenced Flickr photo exists within a 1 km radius.",
+        "score": 5.66549878072228
+      },
+      {
+        "id": "s11:p0",
+        "section": " Conclusions",
+        "text": "In this paper, we have proposed a model to learn geographic location embeddings using Flickr tags, numerical environmental features, and categorical information. The experimental results show that our model can integrate Flickr tags with structured information in a more effective way than existing methods, leading to substantial improvements over baseline methods on various prediction tasks about the natural environment.",
+        "score": 3.330739603278908
+      },
+      {
+        "id": "s6:p0",
+        "section": "Structured Environmental Data",
+        "text": "There is a wide variety of structured data that can be used to describe locations. In this work, we have restricted ourselves to the same datasets as BIBREF7 . These include nine (real-valued) numerical features, which are latitude, longitude, elevation, population, and five climate related features (avg. temperature, avg. precipitation, avg. solar radiation, avg. wind speed, and avg. water vapor pressure). In addition, 180 categorical features were used, which are CORINE land cover classes at level 1 (5 classes), level 2 (15 classes) and level 3 (44 classes) and 116 soil types (SoilGrids). Note that each location should belong to exactly 4 categories: one CORINE class at each of the three levels and a soil type.",
+        "score": 2.7647609071795625
+      }
+    ]
+  }
+]

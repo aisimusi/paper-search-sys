@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scholar-daily"
+version = "0.1.0"
+description = "Personal daily literature research with portable agent backends"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+harness = ["deepseek-harness-sdk==0.1.5rc1"]
+orchestrator = ["langgraph==1.2.15", "langgraph-checkpoint-sqlite==3.1.2"]
+mcp = ["mcp==1.26.0"]
+dense = ["faiss-cpu==1.15.1", "sentence-transformers==6.1.0", "numpy>=1.25,<3"]
+
+[project.scripts]
+scholar-daily = "scholar_daily.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["scholar_daily*"]

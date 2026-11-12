@@ -1,0 +1,8 @@
+{
+  "name": "scholar-daily-dsh",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness plugin: expose scholar-daily commands in the GUI slash-command palette",
+  "type": "module",
+  "main": "lib/index.js",
+  "license": "MIT"
+}

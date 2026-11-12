@@ -1,0 +1,79 @@
+{
+  "project": {
+    "root": ".",
+    "name": "my-research",
+    "timezone": "Asia/Shanghai",
+    "data_dir": "data",
+    "output_dir": "reports",
+    "cache_dir": "cache"
+  },
+  "schedule": {
+    "local_time": "08:00",
+    "cron_timezone": "Asia/Shanghai"
+  },
+  "research_profile": {
+    "domains": [
+      {
+        "name": "填写研究方向",
+        "queries": [
+          "填写英文关键词组合"
+        ],
+        "arxiv_categories": [
+          "cs.AI"
+        ],
+        "recent_days": 7,
+        "hot_days": 90
+      }
+    ],
+    "lab_context": {
+      "summary": "",
+      "methods": [],
+      "datasets": [],
+      "papers": [],
+      "code_repositories": [],
+      "current_questions": []
+    },
+    "compute": {
+      "gpus": [],
+      "cpu_cores": null,
+      "ram_gb": null,
+      "storage_gb": null,
+      "max_experiment_hours": null
+    },
+    "constraints": []
+  },
+  "sources": {
+    "arxiv": true,
+    "huggingface": true,
+    "full_text": true,
+    "max_results_per_query": 40,
+    "analysis_limit": 10,
+    "max_text_chars": 80000
+  },
+  "agent": {
+    "backend": "codex-session",
+    "model": null,
+    "timeout_seconds": 900,
+    "harness": {
+      "dsh_home": ".harness-home",
+      "provider": "deepseek-official",
+      "model": "",
+      "reasoning_model": null,
+      "profile": "",
+      "reasoning_effort": null,
+      "max_tokens": null,
+      "initialize_timeout_seconds": null
+    },
+    "vision": {
+      "enabled": false,
+      "provider": "deepseek-official",
+      "model": "",
+      "base_url": "",
+      "max_pages": 12
+    }
+  },
+  "mcp": {
+    "servers": {},
+    "zotero_server": "zotero"
+  }
+}

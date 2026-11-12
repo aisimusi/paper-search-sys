@@ -1,0 +1,49 @@
+{
+  "api_version": 1,
+  "skills": [
+    {
+      "name": "paper-screening",
+      "description": "按研究检索词、时间窗口和来源信息筛选论文候选，提供去重、排序依据及待精读列表。用于文献初筛；全文结论核查使用 evidence-verification，多论文比较使用 method-comparison。",
+      "version": "0.1.0",
+      "files": {
+        "SKILL.md": "c52a26edbc375dff48519de7797078a120218c36ebff1a3eaf750806d9ba868b",
+        "scripts/run.py": "d3f2a35cc3c770526bcbf2e1ccb61c3bfbdf088fbeb41d936cba47ee6d221f9d",
+        "references/contract.json": "203ffa070945a5e6d3e05373d4e88a34b3cf5ca5edc1eca0b1b6ecfc60553041",
+        "assets/example.json": "e2ce6d0e230995c2e6303bcaa93bc1cad3eedb3d127307c75c0d481e9e30787b"
+      }
+    },
+    {
+      "name": "evidence-verification",
+      "description": "核查论文分析中的原文引文、断言与证据支持关系，输出定位到断言的审查结果和补读或修复建议。用于审核已有分析；需要提供论文正文片段及待核查 analyses。",
+      "version": "0.1.0",
+      "files": {
+        "SKILL.md": "859e246913a6ad4c77cce97ae42e805f218925093bbe821108277b13054f553b",
+        "scripts/run.py": "2bf029d84b6a302433b93044072ada07bd398913ab6ba88e92bed88576fd7a19",
+        "references/contract.json": "16e4d43fe612ff115f6ef422b7a4968fdd207cd3ae93285bf0a90b6b6991bd2b",
+        "assets/example.json": "0dea8e708c3665a03e12d050231ec63244a84fb4af21d2ffd1088f190869e666"
+      }
+    },
+    {
+      "name": "method-comparison",
+      "description": "使用已有任务中通过 Verifier 的证据，对比多篇论文的创新、方法、结果与局限，标注评测条件缺口。用于至少两篇论文的证据比较；未读材料先交给 Reader 分析与审查。",
+      "version": "0.1.0",
+      "files": {
+        "SKILL.md": "14dcf07d78b5b365f50ef5260b2cba41321e860724e9e5b517933a26e4ceb3f3",
+        "scripts/run.py": "3320039220ad7c40d2bdefa9ec7e57a49c7dbd19d242f2260daf33c92b1bad9d",
+        "references/contract.json": "ff471c2a54cec7b03c206a8ccd987316167380de044c31f331423bdc4bb55acd",
+        "assets/example.json": "31af13b732906141cb739742b5cd67e0d22f00196808bc1fa961a60ed5bc347e"
+      }
+    },
+    {
+      "name": "experiment-design",
+      "description": "基于论文证据、已有数据和单卡资源约束设计可检验的最小实验，包含对照、指标、反证与停止条件。用于研究假设或部署实验方案；部署任务需明确目标设备与运行条件。",
+      "version": "0.1.0",
+      "files": {
+        "SKILL.md": "f54f6f1b1f688bc5f811a3821feb6d3a6acbf38877944f3fcde5b3651a025527",
+        "scripts/run.py": "bdca781acfc3bae52ba0bc3e1696dad6f6347d3ba2dfcac801a2f3ce4b3aded3",
+        "references/contract.json": "0b8a40d6f9183d345b01333aebeded49ff5043989b3cc595ac28033a9e6a79ce",
+        "assets/example.json": "cd7e788b4f2cdead7d843b2a6110a4abfe75332ce27495cdfd128bcd30ce83f2"
+      }
+    }
+  ]
+}
